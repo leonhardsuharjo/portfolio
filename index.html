@@ -1,523 +1,579 @@
 <!DOCTYPE html>
-<html lang="en" data-color-scheme="dark">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Leonhard Satria Suharjo - Backend Developer & Data Engineer</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="preconnect" href="https://cdn.jsdelivr.net" />
-  <script defer src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <script defer src="app.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leonhard Satria Suharjo - Data Analysis & Backend Dev enthusiast</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Loading Screen -->
-  <div id="loader" class="loader flex flex-col items-center justify-center">
-    <h2>Loading<span class="dotting">...</span></h2>
-  </div>
+    <!-- LOADER -->
+    <div class="loader" id="loader">
+        <div class="dot-flashing"></div>
+    </div>
 
-  <!-- Scroll Progress Bar -->
-  <div id="scroll-progress"></div>
+    <!-- SCROLL PROGRESS -->
+    <div id="scroll-progress"></div>
 
-  <!-- Header -->
-  <header class="header">
-    <a href="#hero" class="logo">Leonhard Suharjo</a>
-    <nav id="nav-menu" class="nav-menu flex items-center gap-16">
-      <a href="#about" class="nav-link">About</a>
-      <a href="#projects" class="nav-link">Projects</a>
-      <a href="#certifications" class="nav-link">Certifications</a>
-      <a href="#resume" class="nav-link">Resume</a>
-      <a href="#contact" class="nav-link">Contact</a>
-      <button id="theme-toggle" class="btn btn--secondary btn--sm" aria-label="Toggle theme">🌓</button>
-    </nav>
-    <!-- Hamburger -->
-    <button id="hamburger" class="hamburger btn btn--secondary btn--sm" aria-label="Open navigation">☰</button>
-  </header>
-
-  <!-- Mobile Drawer -->
-  <nav id="mobile-drawer" class="mobile-drawer flex flex-col items-center hidden">
-    <a href="#about" class="drawer-link">About</a>
-    <a href="#projects" class="drawer-link">Projects</a>
-    <a href="#certifications" class="drawer-link">Certifications</a>
-    <a href="#resume" class="drawer-link">Resume</a>
-    <a href="#contact" class="drawer-link">Contact</a>
-  </nav>
-
-  <!-- Main Content -->
-  <main>
-    <!-- Hero Section -->
-    <section id="hero" class="hero">
-      <h1 class="hero__title">Hi, I'm <span class="gradient-text"><span>Leonhard</span> <span>Satria</span> <span>Suharjo</span></span></h1>
-      <h2 class="hero__subtitle"><span id="typing"></span></h2>
-      <div class="hero__actions flex gap-8 mt-8">
-        <a href="#projects" class="btn btn--primary">View Projects</a>
-        <a href="mailto:leonhard.suharjo@gmail.com" class="btn btn--outline">Contact Me</a>
-        <a href="#linktree" class="btn btn--outline">My socials</a>
-      </div>
-      <div class="stats-container flex gap-16 mt-8">
-        <div class="stat-item">
-          <span class="stat-number" data-target="4">0</span>
-          <span class="stat-label">Years Experience</span>
-        </div>
-        <div class="stat-item">
-          <span class="stat-number" data-target="8">0</span>
-          <span class="stat-label">Projects</span>
-        </div>
-        <div class="stat-item">
-          <span class="stat-number" data-target="35">0</span>
-          <span class="stat-label">Certifications</span>
-        </div>
-      </div>
-    </section>
-
-    <!-- Featured section -->
-    <!-- Featured Section -->
-    <section class="featured-section">
-      <div class="container">
-        <h2 class="featured-title">Featured Work</h2>
-        <div class="featured-grid">
-          
-          <!-- Featured Item 1: Medium Post -->
-          <div class="featured-card highlight">
-            <div class="featured-badge">Latest Article</div>
-            <img src="thumbnail_medium.png" alt="Le Petit Cafe AI Chat Interface">
-            <div class="featured-content">
-              <h3>Le Petit Cafe - Gen AI LLM Interface</h3>
-              <span class="featured-type">AI app - Medium Article</span>
-              <p>A prototype Generative AI Large Language Model Chat Interface showcasing advanced RAG implementation and conversational AI capabilities.</p>
-              <div class="featured-links">
-                <a href="https://medium.com/@leonhard.suharjo/le-petit-cafe-a-prototype-generative-ai-large-language-model-chat-interface-6bbbc01fc774" target="_blank" class="featured-btn primary">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z"/>
-                  </svg>
-                  Read Article
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Featured Item 2: Company Website -->
-          <div class="featured-card">
-            <div class="featured-badge">Database Application</div>
-            <img src="thumbnail_ProjekKu.png" alt="ProjekKu Application">
-            <div class="featured-content">
-              <h3>ProjekKu</h3>
-              <span class="featured-type">Database App - video breakdown</span>
-              <p>Database manager application involving 12 interconnected screens, 23 Database Transaction processes, and various functions and classes.</p>
-              <div class="featured-links">
-                <a href="https://drive.google.com/file/d/1OS9khRuouFj_jADoYtSHhr7OZ_SVh4Za/view" target="_blank" class="featured-btn primary">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z"/>
-                  </svg>
-                  Visit Site
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Featured Item 3: LifeSynced -->
-          <div class="featured-card">
-            <div class="featured-badge">Web App</div>
-            <img src="thumbnail_Lifesynced.jpg" alt="LifeSynced Web Application">
-            <div class="featured-content">
-              <h3>LifeSynced Application</h3>
-              <span class="featured-type">Health & Wellness App</span>
-              <p>All-in-one health companion web application syncing wellness, community, and technology for a healthier future with modern UI/UX.</p>
-              <div class="featured-links">
-                <a href="https://leonhardsuharjo.github.io/LifeSynced-application/" target="_blank" class="featured-btn primary">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z"/>
-                  </svg>
-                  Launch App
-                </a>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-
-
-    <!-- -->
-
-    <!-- Linktree section -->
-  <section id="linktree" class="social-links-section">
+    <!-- HEADER/NAVIGATION -->
+    <header class="header" id="header">
         <div class="container">
-          <h2 class="social-title">Connect With Me</h2>
-          <div class="social-grid">
-            <a href="https://www.linkedin.com/in/leonhard-satria-suharjo/" target="_blank" class="social-link linkedin">
-              <div class="social-icon">
-                <svg viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-                </svg>
-              </div>
-              <span>LinkedIn</span>
-            </a>
-
-            <a href="https://medium.com/@leonhard.suharjo" target="_blank" class="social-link medium">
-              <div class="social-icon">
-                <svg viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z"/>
-                </svg>
-              </div>
-              <span>Medium</span>
-            </a>
-
-            <a href="https://www.kaggle.com/leonhardsuharjo" target="_blank" class="social-link kaggle">
-              <div class="social-icon">
-                <svg viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M18.825 23.859c-.022.092-.117.141-.281.141h-3.139c-.187 0-.351-.082-.492-.248l-5.178-6.589-1.448 1.374v5.111c0 .235-.117.352-.351.352H5.505c-.236 0-.354-.117-.354-.352V.353c0-.233.118-.353.354-.353h2.431c.234 0 .351.12.351.353v14.343l6.203-6.272c.165-.165.33-.246.495-.246h3.239c.144 0 .236.06.285.18.046.149.034.255-.036.315l-6.555 6.344 6.836 8.507c.095.104.117.208.07.336"/>
-                </svg>
-              </div>
-              <span>Kaggle</span>
-            </a>
-
-            <a href="https://github.com/L3onhrd" target="_blank" class="social-link github">
-              <div class="social-icon">
-                <svg viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                </svg>
-              </div>
-              <span>GitHub</span>
-            </a>
-
-            <a href="https://www.hackerrank.com/profile/leonhard_suharjo" target="_blank" class="social-link hackerrank">
-              <div class="social-icon">
-                <svg viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M12 0c1.285 0 9.75 4.886 10.392 6 .642 1.114.642 10.886 0 12C21.75 19.114 13.285 24 12 24s-9.75-4.886-10.392-6C1.006 16.886 1.006 7.114 1.608 6 2.25 4.886 10.715 0 12 0zm2.4 5.6l-.9 2.4 9.6 4.8-9.6 4.8.9 2.4L24 14.4v-4.8L14.4 5.6zM9.6 5.6L0 9.6v4.8l9.6 4.8.9-2.4L.9 12 10.5 8l-.9-2.4z"/>
-                </svg>
-              </div>
-              <span>HackerRank</span>
-            </a>
-
-            <a href="https://www.cloudskillsboost.google/public_profiles/86c45e8e-0872-414b-8f9f-546315c1fe9f" target="_blank" class="social-link gcp">
-              <div class="social-icon">
-                <svg viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M12.01 18.06c-1.15 0-2.24-.31-3.17-.85l4.41-3.45c.48.18 1 .27 1.54.27 2.35 0 4.26-1.91 4.26-4.26 0-.54-.1-1.06-.27-1.54l3.45-4.41c.54.93.85 2.02.85 3.17 0 3.9-3.16 7.07-7.07 7.07zm-7.87-9.87c0-1.15.31-2.24.85-3.17l4.41 3.45c-.18.48-.27 1-.27 1.54 0 2.35 1.91 4.26 4.26 4.26.54 0 1.06-.1 1.54-.27l4.41 3.45c-.93.54-2.02.85-3.17.85-3.9 0-7.07-3.16-7.07-7.07l.04-.04z"/>
-                </svg>
-              </div>
-              <span>Google Cloud</span>
-            </a>
-          </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="about-section">
-      <div class="container">
-        <h2 class="section-title">About Me</h2>
-        
-        <div class="about-content-with-photo">
-          <!-- Left side - Text content -->
-          <div class="about-text-content">
-            <div class="about-text">
-              <p>
-                Hello there!, welcome to my personal site, my name's Leonhard, a current Data Analysis student at the University of Messina in Italy, interested in machine learning and cloud computing. I am currently pursuing ways of building scalable data pipelines, API-driven ML applications, and robust backend systems. 
-              </p>
-              <p>
-                As my journey spans from academic scope in Computer Science and Mathematics to practical applications in industry environments, I am constantly exploring emerging technologies and contributing to innovative projects that bridge the gap between data science and software engineering.
-              </p>
+            <div class="navbar">
+                <div class="logo">Leonhard<span>.dev</span></div>
+                <nav>
+                    <ul class="nav-links" id="navLinks">
+                        <li><a href="#home" class="nav-link active">Home</a></li>
+                        <li><a href="#about" class="nav-link">About</a></li>
+                        <li><a href="#featured" class="nav-link">Featured</a></li>
+                        <li><a href="#projects" class="nav-link">Projects</a></li>
+                        <li><a href="#certifications" class="nav-link">Certifications</a></li>
+                        <li><a href="#publications" class="nav-link">Publications</a></li>
+                        <li><a href="#contact" class="nav-link">Contact</a></li>
+                    </ul>
+                </nav>
+                <button class="menu-toggle" id="menuToggle">☰</button>
             </div>
+        </div>
+    </header>
 
-            <!-- Programming Languages & Technologies -->
-            <div class="skills-grid">
-              <div class="skill-category">
-                <h3>Programming Languages</h3>
-                <div class="skill-tags">
-                  <span class="skill-tag">Python</span>
-                  <span class="skill-tag">JavaScript</span>
-                  <span class="skill-tag">TypeScript</span>
-                  <span class="skill-tag">C</span>
-                  <span class="skill-tag">HTML</span>
-                  <span class="skill-tag">CSS</span>
-                  <span class="skill-tag">SQL</span>
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Hi, I'm <span class="highlight">Leonhard</span></h1>
+                <div class="hero-subtitle" id="typingText">Data Engineer</div>
+                <p class="hero-description">
+                    Hello there!, welcome to my personal site, my name's Leonhard, a current Data Analysis student at the University of Messina in Italy </br>
+                    I build scalable backends, AI-powered solutions, and cloud integration that drive real-world impact.</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
                 </div>
-              </div>
-
-              <div class="skill-category">
-                <h3>Technologies & Tools</h3>
-                <div class="skill-tags">
-                  <span class="skill-tag">Machine Learning</span>
-                  <span class="skill-tag">Data Analysis</span>
-                  <span class="skill-tag">Cloud Computing</span>
-                  <span class="skill-tag">Databases</span>
-                  <span class="skill-tag">DevOps</span>
-                  <span class="skill-tag">RAG Systems</span>
-                  <span class="skill-tag">GPT Integration</span>
-                  <span class="skill-tag">Flask/FastAPI</span>
-                  <span class="skill-tag">Apache Airflow</span>
-                  <span class="skill-tag">AWS/GCP</span>
+                <div class="hero-stats">    
+                    <div class="stat-item">
+                        <div class="stat-number" id="expCounter">4</div>
+                        <div class="stat-label">Years Learning</br>Experience</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" id="projCounter">12</div>
+                        <div class="stat-label">Projects</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" id="certCounter">41</div>
+                        <div class="stat-label">Certifications</div>
+                    </div>
                 </div>
-              </div>
+            </div>
+        </div>
+    </section>
 
-              <div class="skill-category">
-                <h3>Languages</h3>
-                <div class="languages-list">
-                  <div class="language-item">
-                    <span class="language-name">🇺🇸 English</span>
-                    <span class="language-level">C1 Level (IB Bilingual Diploma)</span>
-                  </div>
-                  <div class="language-item">
-                    <span class="language-name">🇮🇩 Indonesian</span>
-                    <span class="language-level">Native </span>
-                  </div>
-                  <div class="language-item">
-                    <span class="language-name">🇮t Italian</span>
-                    <span class="language-level">Beginner </span>
-                  </div>
+    <!-- ABOUT SECTION -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-container">
+                <div class="about-text">
+                    <p>Data Analysis (Computer Science) student at the University of Messina, Italy, with hands-on experience in backend & frontend programming, database management, and cloud implementation through personal projects and certifications.</p>
+                    <p>I am eager to connect with individuals to share knowledge and explore new opportunities in the tech field.</p>
+                    <p style="margin-top: 2rem; font-weight: 600;">📧 Reach me at: <a href="mailto:leonhard.suharjo@gmail.com">leonhard.suharjo@gmail.com</a></p>
+                    <p>🌐 Linkedin: <a href="linkedin.com/in/leonhard-satria-suharjo/" target="_blank">My Linkedin</a></p>
+                    <p>📝 Medium: <a href="https://medium.com/@leonhard.suharjo" target="_blank">My Articles</a></p>
+                    <p>👩‍🏫 Github: <a href="https://github.com/leonhardsuharjo" target="_blank">My Github</a></p>
                 </div>
-              </div>
+                <div class="about-photo">
+                    <img src="fotoformal_linkedin.jpg" alt="Leonhard Satria Suharjo" />
+                </div>
             </div>
-          </div>
-
-          <!-- Right side - Photo -->
-          <div class="about-photo-container">
-            <div class="photo-frame">
-              <img src="fotoformal_linkedin.jpg" alt="Leonhard Satria Suharjo" class="profile-photo">
-            </div>
-          </div>
         </div>
-      </div>
     </section>
 
 
-    <!-- Projects Section -->
-    
-    <section id="projects" class="projects-area">
-        <h2>My Projects</h2>
-        <div class="projects-grid">
-          
-          <!-- Project 1: Kaggle Capstone -->
-          <div class="project-card">
-            <img src="thumbnail_Capstone.jpg" alt="Kaggle Capstone Gen AI LLM Chat Interface">
-            <div class="project-content">
-              <h3>Kaggle Capstone Gen AI LLM Chat Interface</h3>
-              <span class="stack">Python · Google Gemini · RAG</span>
-              <p>Le Petit Cafe — A Prototype Generative AI Large Language Model Chat Interface</p>
-              <div class="links">
-                <a href="https://www.youtube.com/watch?v=fZNQEkUVdc0&t=23s&ab_channel=LeonhardSatriaSuharjo" class="project-btn">Demo</a>
-                <a href="https://medium.com/@leonhard.suharjo/le-petit-cafe-a-prototype-generative-ai-large-language-model-chat-interface-6bbbc01fc774" class="project-btn outline">GitHub</a>
-              </div>
-            </div>
-          </div>
+    <!-- FEATURED SECTION -->
+    <section class="featured-section" id="featured">
+        <div class="container">
+            <h2 class="section-title">Featured Articles</h2>
+            <div class="featured-grid">
+                <a href="" target="_blank" class="featured-card">
+                    <img src="thumbnail_howiconnected.jpg" alt="Description of article" class="featured-thumbnail">
+                    <div class="featured-content">
+                        <h3>450+ Day Streak on Duolingo</h3>
+                        <p class="featured-date">Dec 17, 2025</p>
+                        <p>Reflections on consistency, learning habits, and linguistic persistence.</p>
+                        <a href=" https://medium.com/@leonhard.suharjo/450-day-streak-on-duolingo-6670cdef9e82" target="_blank" class="featured-link">Read on Medium →</a>
+                    </div>
+                </a>
 
-          <!-- Project 2: LifeSynced -->
-          <div class="project-card">
-            <img src="thumbnail_Lifesynced.jpg" alt="LifeSynced Web Application">
-            <div class="project-content">
-              <h3>LifeSynced Web Application</h3>
-              <span class="stack">TypeScript · HTML · JavaScript · CSS</span>
-              <p>All-in-one health companion syncing wellness, community, and technology for a healthier future.</p>
-              <div class="links">
-                <a href="https://leonhardsuharjo.github.io/LifeSynced-application/" class="project-btn">Demo</a>
-                <a href="https://github.com/leonhardsuharjo/LifeSynced-application" class="project-btn outline">GitHub</a>
-              </div>
-            </div>
-          </div>
+                <a href="" target="_blank" class="featured-card">
+                    <img src="thumbnail_candi.jpg" alt="Description of article" class="featured-thumbnail">
+                    <div class="featured-content">
+                        <h3>AI Agents & Supply Chain</h3>
+                        <p class="featured-date">Dec 3, 2025</p>
+                        <p>Building SuplaiCerdas: From Google-Kaggle's AI Agents Course to Real-World Supply Chain Automation.</p>
+                        <a href="https://medium.com/@leonhard.suharjo/how-i-connected-ai-agents-with-manufacturing-supply-chain-3ae196d61e8f" target="_blank" class="featured-link">Read on Medium →</a>
+                    </div>
+                </a>
 
-          <!-- Project 3: Enterprise Sales Scheduler -->
-          <div class="project-card">
-            <img src="thumbnail_ProjekKu.png" alt="Enterprise Sales Scheduler Application">
-            <div class="project-content">
-              <h3>Enterprise Sales Scheduler</h3>
-              <span class="stack">Python · Tkinter · SQL</span>
-              <p>Scheduler application with functioning database for manufacturer enterprises with insights and data tables.</p>
-              <div class="links">
-                <a href="https://www.youtube.com/watch?v=78s_2lcI89w&ab_channel=LeonhardSatriaSuharjo" class="project-btn">Demo</a>
-                <a href="https://github.com/leonhardsuharjo/ProjekKu-ID_Enterprise-database-manager-application-" class="project-btn outline">GitHub</a>
-              </div>
+                <a href="" target="_blank" class="featured-card">
+                    <img src="thumbnail_duolingo.jpg" alt="Description of article" class="featured-thumbnail">
+                    <div class="featured-content">
+                        <h3>CANDI - Cloud Intelligence Platform</h3>
+                        <p class="featured-date">Dec 8, 2025</p>
+                        <p>AI-powered military logistics and security command center with Google Cloud & Gemini.</p>
+                        <a href="https://dev.to/leonhardsuharjo/candi-cloud-defence-intelligence-platform-ei4" target="_blank" class="featured-link">Read on DEV →</a>
+                    </div>
+                </a>
             </div>
-          </div>
-
-          <!-- Project 4: Calculator App -->
-          <div class="project-card">
-            <img src="thumbnail_Torque.jpg" alt="Torque, Inertia, and Force Calculator">
-            <div class="project-content">
-              <h3>Torque & Force Calculator</h3>
-              <span class="stack">Python · SQL Database</span>
-              <p>Calculator app made with Python, connected to an SQL database for physics calculations.</p>
-              <div class="links">
-                <a href="https://www.youtube.com/watch?v=P4toBxumhTU" class="project-btn">Demo</a>
-                <a href="https://github.com/leonhardsuharjo/Torque_Inertia_Database_Calculator" class="project-btn outline">GitHub</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Project 5: Company Website -->
-          <div class="project-card">
-            <img src="thumbnail_companyWeb2.png" alt="Company Website">
-            <div class="project-content">
-              <h3>Company Website</h3>
-              <span class="stack">HTML · CSS · JavaScript</span>
-              <p>Responsive company website with multiple animations and modern frontend features.</p>
-              <div class="links">
-                <a href="https://leonhardsuharjo.github.io/Valkan_Teknik_companyweb/" class="project-btn">Demo</a>
-                <a href="https://github.com/leonhardsuharjo/Valkan_Teknik_companyweb" class="project-btn outline">GitHub</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Project 6: Login System -->
-          <div class="project-card">
-            <img src="thumbnail_weblogin.png" alt="Web Application Login System">
-            <div class="project-content">
-              <h3>Web App Login System</h3>
-              <span class="stack">Python · Flask · SQLite3</span>
-              <p>Web application login and registration system built with Flask Python and SQLite3 database.</p>
-              <div class="links">
-                <a href="https://www.youtube.com/watch?v=EZojvcAo0Mc" class="project-btn">Demo</a>
-                <a href="https://github.com/leonhardsuharjo/Secure_login_register_WebApp" class="project-btn outline">GitHub</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Project 7: Tourism Website -->
-          <div class="project-card">
-            <img src="thumbnail_Explotour.png" alt="Indonesia Tourism Website">
-            <div class="project-content">
-              <h3>Indonesia Tourism Website</h3>
-              <span class="stack">HTML · JavaScript · CSS</span>
-              <p>Informative website featuring linked tabs, clickable icons, smooth UI, and Indonesia tourism information.</p>
-              <div class="links">
-                <a href="https://leonhardsuharjo.github.io/Explotour_personalproject/" class="project-btn">Demo</a>
-                <a href="https://github.com/leonhardsuharjo/Explotour_personalproject" class="project-btn outline">GitHub</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Project 8: Additional project if needed 
-          <div class="project-card">
-            <img src="images/project8.jpg" alt="Additional Project">
-            <div class="project-content">
-              <h3>Future Project</h3>
-              <span class="stack">Coming Soon</span>
-              <p>Placeholder for your next amazing project!</p>
-              <div class="links">
-                <a href="#" class="project-btn">Demo</a>
-                <a href="#" class="project-btn outline">GitHub</a>
-              </div>
-            </div>
-          </div>
-        -->
-
         </div>
-     </section>
-
-
-    <!-- Certifications Section -->
-    <section id="certifications" class="container certifications py-16">
-      <h2 class="section-title">Certifications & Achievements</h2>
-      <div class="cert-filters mt-8">
-        <div id="cert-filters" class="filters"></div>
-      </div>
-      <div id="certifications-grid" class="certifications-grid mt-8"></div>
     </section>
 
-    <!-- Resume Section -->
-    <!-- Resume PDF Viewer Section -->
-    <section id="resume" class="resume-section">
-      <div class="container">
-        <h2 class="section-title">My Resume</h2>
-        <div class="pdf-viewer-container">
-          <div class="pdf-controls">
-            <a href="resume/leonhard-resume.pdf" download class="download-btn">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z"/>
-              </svg>
-              Download PDF
-            </a>
-          </div>
-          <div class="pdf-embed">
-            <!-- PUT YOUR PDF FILE PATH HERE -->
-            <iframe 
-              src="CV_final.pdf#toolbar=0&navpanes=0&scrollbar=0" 
-              width="100%" 
-              height="600" 
-              style="border: none; border-radius: 12px;">
-              <p>Your browser does not support PDF viewing. 
-                <a href="resume/leonhard-resume.pdf" target="_blank">Click here to download the PDF</a>
-              </p>
-            </iframe>
-          </div>
+    <!-- PROJECTS SECTION -->
+    <section class="projects-section" id="projects">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <img src="thumbnail_main_candi.jpg" alt="CANDI Project" class="project-thumbnail">
+                    <div class="project-content">
+                        <h3>Cloud Defense Intelligence (CANDI)</h3>
+                        <p class="project-date">Dec 2025 - Present</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Google Gemini</span>
+                            <span class="tech-tag">GCP</span>
+                        </div>
+                        <p>Prototype AI-powered military logistics and security command center built with Google Cloud & Gemini 3.</p>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <img src="thumbnail_ProjekKu_sumplaicerdas.jpg" alt="SuplaiCerdas Project" class="project-thumbnail">
+                    <div class="project-content">
+                        <h3>SuplaiCerdas - AI Agent</h3>
+                        <p class="project-date">Nov 2025 - Dec 2025</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">AI Agents</span>
+                        </div>
+                        <p>Prototype AI agent automating material price checking, comparison, and risk assessment for enterprises.</p>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <img src="thumbnail_Capstone.jpg" alt="Le Petit Cafe Project" class="project-thumbnail">
+                    <div class="project-content">
+                        <h3>Le Petit Cafe - RAG Chat</h3>
+                        <p class="project-date">Apr 2025 - May 2025</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">RAG</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Gemini</span>
+                        </div>
+                        <p>Generative AI LLM chat interface with retrieval-augmented generation capabilities.</p>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card">
+                    <img src="thumbnail_Lifesynced.jpg" alt="LifeSynced Project" class="project-thumbnail">
+                    <div class="project-content">
+                        <h3>LifeSynced Application</h3>
+                        <p class="project-date">Oct 2024 - Nov 2024</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">TypeScript</span>
+                            <span class="tech-tag">React</span>
+                        </div>
+                        <p>All-in-one health companion syncing wellness, community, and technology for a healthier future.</p>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-card">
+                    <img src="thumbnail_enterprisesales.jpg" alt="Enterprise Scheduler" class="project-thumbnail">
+                    <div class="project-content">
+                        <h3>Enterprise Sales Scheduler</h3>
+                        <p class="project-date">Jun 2023 - Jul 2023</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">SQL</span>
+                        </div>
+                        <p>Scheduler application with functioning database for manufacturer enterprises with insights and data tables.</p>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="project-card">
+                    <img src="thumbnail_companyWeb2.jpg" alt="Company Website" class="project-thumbnail">
+                    <div class="project-content">
+                        <h3>Company Website</h3>
+                        <p class="project-date">Jul 2025</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML/CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                        <p>Professional company website with responsive design and modern frontend features.</p>
+                    </div>
+                </div>
+
+                <!-- Project 7 -->
+                <div class="project-card">
+                    <img src="thumbnail_Torque.jpg" alt="Calculator App" class="project-thumbnail">
+                    <div class="project-content">
+                        <h3>Physics Calculator App</h3>
+                        <p class="project-date">Feb 2023 - Mar 2023</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Database</span>
+                        </div>
+                        <p>Calculator for torque, inertia, and force with integrated SQL database for record-keeping.</p>
+                    </div>
+                </div>
+
+                <!-- Project 8 -->
+                <div class="project-card">
+                    <img src="thumbnail_weblogin.jpg" alt="Login System" class="project-thumbnail">
+                    <div class="project-content">
+                        <h3>Web Login System</h3>
+                        <p class="project-date">Apr 2022 - May 2022</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Flask</span>
+                            <span class="tech-tag">SQLite</span>
+                        </div>
+                        <p>Complete web application login and registration system linked to a database.</p>
+                    </div>
+                </div>
+
+                <!-- Project 9 -->
+                <div class="project-card">
+                    <img src="thumbnail_Explotour.png" alt="Tourism Website" class="project-thumbnail">
+                    <div class="project-content">
+                        <h3>Indonesia Tourism Website</h3>
+                        <p class="project-date">Oct 2021 - Mar 2022</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML/CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                        <p>Informative website with linked tabs, clickable icons, smooth UI about Indonesia's tourism.</p>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
     </section>
 
+    <!-- CERTIFICATIONS SECTION -->
+    <section class="certifications-section" id="certifications">
+        <div class="container">
+            <h2 class="section-title">Certifications & Achievements (41 Total)</h2>
+            <div class="certifications-grid">
+                <!-- 2025 Certifications -->
+                <div class="cert-card">
+                    <h3 class="cert-title">Scaling with Google Cloud Operations</h3>
+                    <p class="cert-issuer">Google</p>
+                    <p class="cert-date">December 2025</p>
+                    <p class="cert-credential">ID: 20702508</p>
+                    <div class="cert-skills">
+                        <span class="skill-tag">DevOps</span>
+                        <span class="skill-tag">GCP</span>
+                    </div>
+                </div>
 
-    <!-- Contact Section -->
-    <section id="contact" class="container contact py-16">
-      <h2 class="section-title">Get In Touch</h2>
-      <div class="contact__content grid-2-col gap-16 mt-8">
-        <div class="contact__details flex flex-col gap-8" id="contact-details"></div>
-        <form id="contact-form" class="contact-form flex flex-col gap-8" novalidate>
-          <div class="form-group">
-            <label class="form-label" for="name">Name *</label>
-            <input class="form-control" type="text" id="name" name="name" required />
-            <div class="error-message" id="name-error"></div>
-          </div>
-          <div class="form-group">
-            <label class="form-label" for="email">Email *</label>
-            <input class="form-control" type="email" id="email" name="email" required />
-            <div class="error-message" id="email-error"></div>
-          </div>
-          <div class="form-group">
-            <label class="form-label" for="subject">Subject *</label>
-            <input class="form-control" type="text" id="subject" name="subject" required />
-            <div class="error-message" id="subject-error"></div>
-          </div>
-          <div class="form-group">
-            <label class="form-label" for="message">Message *</label>
-            <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
-            <div class="error-message" id="message-error"></div>
-          </div>
-          <button type="submit" class="btn btn--primary btn--full-width">Send Message</button>
-          <div id="form-status" class="form-status"></div>
-        </form>
-      </div>
+                <div class="cert-card">
+                    <h3 class="cert-title">Trust and Security with Google Cloud</h3>
+                    <p class="cert-issuer">Google</p>
+                    <p class="cert-date">December 2025</p>
+                    <p class="cert-credential">ID: 20702069</p>
+                    <div class="cert-skills">
+                        <span class="skill-tag">GCP</span>
+                        <span class="skill-tag">Cybersecurity</span>
+                    </div>
+                </div>
+
+                <div class="cert-card">
+                    <h3 class="cert-title">Google - Kaggle AI Agents 5-Day</h3>
+                    <p class="cert-issuer">Kaggle & Google</p>
+                    <p class="cert-date">November 2025</p>
+                    <div class="cert-skills">
+                        <span class="skill-tag">AI Agents</span>
+                        <span class="skill-tag">Python</span>
+                    </div>
+                </div>
+
+                <div class="cert-card">
+                    <h3 class="cert-title">Infrastructure Modernization</h3>
+                    <p class="cert-issuer">Google</p>
+                    <p class="cert-date">September 2025</p>
+                    <p class="cert-credential">ID: 18578328</p>
+                    <div class="cert-skills">
+                        <span class="skill-tag">GCP</span>
+                    </div>
+                </div>
+
+                <div class="cert-card">
+                    <h3 class="cert-title">Innovating with Google Cloud AI</h3>
+                    <p class="cert-issuer">Google</p>
+                    <p class="cert-date">August 2025</p>
+                    <p class="cert-credential">ID: 17720079</p>
+                    <div class="cert-skills">
+                        <span class="skill-tag">GCP</span>
+                        <span class="skill-tag">Cloud Computing</span>
+                    </div>
+                </div>
+
+                <div class="cert-card">
+                    <h3 class="cert-title">Digital Transformation with GCP</h3>
+                    <p class="cert-issuer">Google</p>
+                    <p class="cert-date">May 2025</p>
+                    <p class="cert-credential">ID: 15873556</p>
+                    <div class="cert-skills">
+                        <span class="skill-tag">GCP</span>
+                        <span class="skill-tag">Cloud</span>
+                    </div>
+                </div>
+
+                <div class="cert-card">
+                    <h3 class="cert-title">Data Transformation with GCP</h3>
+                    <p class="cert-issuer">Google</p>
+                    <p class="cert-date">May 2025</p>
+                    <p class="cert-credential">ID: 16036449</p>
+                    <div class="cert-skills">
+                        <span class="skill-tag">GCP</span>
+                        <span class="skill-tag">Databases</span>
+                    </div>
+                </div>
+
+                <div class="cert-card">
+                    <h3 class="cert-title">2 Years on Kaggle</h3>
+                    <p class="cert-issuer">Kaggle</p>
+                    <p class="cert-date">April 2025</p>
+                    <div class="cert-skills">
+                        <span class="skill-tag">Data Analysis</span>
+                    </div>
+                </div>
+
+                <div class="cert-card">
+                    <h3 class="cert-title">Google - Kaggle Gen AI 5-Day</h3>
+                    <p class="cert-issuer">Kaggle & Google</p>
+                    <p class="cert-date">April 2025</p>
+                    <div class="cert-skills">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">ML</span>
+                        <span class="skill-tag">Data Analysis</span>
+                    </div>
+                </div>
+
+                <div class="cert-card">
+                    <h3 class="cert-title">Palantir - 5 Certifications</h3>
+                    <p class="cert-issuer">Palantir Technologies</p>
+                    <p class="cert-date">April 2025</p>
+                    <div class="cert-skills">
+                        <span class="skill-tag">Data Engineering</span>
+                        <span class="skill-tag">Data Analysis</span>
+                    </div>
+                </div>
+
+                <div class="cert-card">
+                    <h3 class="cert-title">C Programming - 4⭐ Silver</h3>
+                    <p class="cert-issuer">HackerRank</p>
+                    <p class="cert-date">March 2025</p>
+                    <div class="cert-skills">
+                        <span class="skill-tag">C Programming</span>
+                    </div>
+                </div>
+
+                <!-- 2024 Certifications -->
+                <div class="cert-card">
+                    <h3 class="cert-title">Belajar DevOps</h3>
+                    <p class="cert-issuer">Dicoding Indonesia</p>
+                    <p class="cert-date">November 2024 (Expires Nov 2027)</p>
+                    <p class="cert-credential">ID: 81P24LM38ZOY</p>
+                    <div class="cert-skills">
+                        <span class="skill-tag">DevOps</span>
+                    </div>
+                </div>
+
+                <div class="cert-card">
+                    <h3 class="cert-title">Python Programming - 5⭐ Gold</h3>
+                    <p class="cert-issuer">HackerRank</p>
+                    <p class="cert-date">November 2024</p>
+                    <div class="cert-skills">
+                        <span class="skill-tag">Python</span>
+                    </div>
+                </div>
+
+                <div class="cert-card">
+                    <h3 class="cert-title">Code for Impact Hackathon</h3>
+                    <p class="cert-issuer">Devpost</p>
+                    <p class="cert-date">September 2024</p>
+                    <div class="cert-skills">
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">TypeScript</span>
+                    </div>
+                </div>
+
+                <div class="cert-card">
+                    <h3 class="cert-title">Project Management</h3>
+                    <p class="cert-issuer">Dicoding Indonesia</p>
+                    <p class="cert-date">September 2024 (Expires Sep 2027)</p>
+                    <p class="cert-credential">ID: 1RXYL9RR9PVM</p>
+                    <div class="cert-skills">
+                        <span class="skill-tag">PM</span>
+                    </div>
+                </div>
+
+                <div class="cert-card">
+                    <h3 class="cert-title">Bilingual Diploma</h3>
+                    <p class="cert-issuer">International Baccalaureate</p>
+                    <p class="cert-date">July 2024</p>
+                    <div class="cert-skills">
+                        <span class="skill-tag">Academic</span>
+                    </div>
+                </div>
+
+                <!-- Additional 2023 & earlier certifications (summarized) -->
+                <div class="cert-card">
+                    <h3 class="cert-title">IB Academic Award - CS</h3>
+                    <p class="cert-issuer">Sekolah Victory Plus</p>
+                    <p class="cert-date">December 2023</p>
+                    <div class="cert-skills">
+                        <span class="skill-tag">Databases</span>
+                        <span class="skill-tag">Python</span>
+                    </div>
+                </div>
+
+                <div class="cert-card">
+                    <h3 class="cert-title">IELTS Academic - 7.5</h3>
+                    <p class="cert-issuer">IDP Education</p>
+                    <p class="cert-date">August 2023</p>
+                    <div class="cert-skills">
+                        <span class="skill-tag">English</span>
+                    </div>
+                </div>
+
+                <div class="cert-card">
+                    <h3 class="cert-title">SAP Analytics Cloud</h3>
+                    <p class="cert-issuer">SAP</p>
+                    <p class="cert-date">October 2023</p>
+                    <div class="cert-skills">
+                        <span class="skill-tag">Data Analysis</span>
+                    </div>
+                </div>
+
+                <div class="cert-card">
+                    <h3 class="cert-title">Best Innovation Award</h3>
+                    <p class="cert-issuer">SVP Innovation Month 2023</p>
+                    <p class="cert-date">February 2023</p>
+                    <div class="cert-skills">
+                        <span class="skill-tag">Innovation</span>
+                    </div>
+                </div>
+
+                <div class="cert-card">
+                    <h3 class="cert-title">+ 21 More Certifications</h3>
+                    <p class="cert-issuer">Various (2022 & Earlier)</p>
+                    <p style="margin-top: 1rem; font-size: 0.9rem; color: #999;">Including: Machine Learning, Cloud Practitioner, Dicoding courses, HackerRank badges, Mathematics HL, Science competitions, and more.</p>
+                </div>
+            </div>
+        </div>
     </section>
-  </main>
 
-  <!-- Footer -->
-  <footer class="footer py-16">
-    <div class="container">
-      <p>&copy; <span id="year"></span> Leonhard Satria Suharjo. All rights reserved.</p>
-      <div class="social-links flex gap-8 justify-center mt-8">
-        <a href="https://linkedin.com/in/leonhard-satria-suharjo" target="_blank" class="social-link" aria-label="LinkedIn">💼</a>
-        <a href="https://github.com/leonhardsuharjo" target="_blank" class="social-link" aria-label="GitHub">💻</a>
-        <a href="mailto:leonhard.suharjo@gmail.com" class="social-link" aria-label="Email">📧</a>
-      </div>
-      <button id="back-to-top" class="back-to-top btn btn--secondary btn--sm">↑ Back to Top</button>
-    </div>
-  </footer>
+    <!-- PUBLICATIONS SECTION -->
+    <section class="publications-section" id="publications">
+        <div class="container">
+            <h2 class="section-title">Publications (8 Articles)</h2>
+            <div class="publications-grid">
+                <article class="publication-card">
+                    <h3>450+ Day Streak on Duolingo</h3>
+                    <p class="pub-date">December 17, 2025</p>
+                    <p>But does it matter? Reflections on consistency and learning.</p>
+                </article>
+                <article class="publication-card">
+                    <h3>CANDI - Cloud Intelligence Platform</h3>
+                    <p class="pub-date">December 8, 2025</p>
+                    <p>AI-powered defense logistics and security command center.</p>
+                </article>
+                <article class="publication-card">
+                    <h3>AI Agents & Manufacturing Supply Chain</h3>
+                    <p class="pub-date">December 3, 2025</p>
+                    <p>Building SuplaiCerdas: From Course to Real-World Automation</p>
+                </article>
+                <article class="publication-card">
+                    <h3>Post/Pre-order Traversal in Python Trees</h3>
+                    <p class="pub-date">November 9, 2025</p>
+                    <p>Algorithm review from Data Structures course.</p>
+                </article>
+                <article class="publication-card">
+                    <h3>Infrastructure Modernization - GCP Learnings</h3>
+                    <p class="pub-date">September 26, 2025</p>
+                    <p>Reflections after module 4 of GCP Digital Leader.</p>
+                </article>
+                <article class="publication-card">
+                    <h3>GCP Digital Leader Course - First 3 Modules</h3>
+                    <p class="pub-date">August 31, 2025</p>
+                    <p>Course progress reflection over past weeks.</p>
+                </article>
+                <article class="publication-card">
+                    <h3>Learning Python & C with HackerRank</h3>
+                    <p class="pub-date">August 24, 2025</p>
+                    <p>What HackerRank taught me about programming.</p>
+                </article>
+                <article class="publication-card">
+                    <h3>Le Petit Cafe - RAG Capstone Project</h3>
+                    <p class="pub-date">April 19, 2025</p>
+                    <p>Deep dive into our Kaggle & Google Gen AI Capstone.</p>
+                </article>
+            </div>
+        </div>
+    </section>
 
-  <!-- Project Modal -->
-  <div id="project-modal" class="modal hidden">
-    <div class="modal__overlay" data-close></div>
-    <div class="modal__content" role="dialog" aria-modal="true" aria-labelledby="modal-title">
-      <header class="modal__header flex justify-between items-center">
-        <h3 id="modal-title"></h3>
-        <button class="btn btn--secondary btn--sm" data-close>&times;</button>
-      </header>
-      <div class="modal__body card__body" id="modal-body"></div>
-      <footer class="modal__footer flex gap-8" id="modal-footer"></footer>
-    </div>
-  </div>
+    <!-- CONTACT SECTION -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-icon">📧</div>
+                    <h3>Email</h3>
+                    <p><a href="mailto:leonhard.suharjo@gmail.com">leonhard.suharjo@gmail.com</a></p>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">💼</div>
+                    <h3>LinkedIn</h3>
+                    <p><a href="https://linkedin.com/in/leonhard-satria-suharjo" target="_blank">Visit Profile</a></p>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">💻</div>
+                    <h3>GitHub</h3>
+                    <p><a href="https://github.com/L3onhrd" target="_blank">@L3onhrd</a></p>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">📝</div>
+                    <h3>Medium</h3>
+                    <p><a href="https://medium.com/@leonhard.suharjo" target="_blank">Read Articles</a></p>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">🏆</div>
+                    <h3>Kaggle</h3>
+                    <p><a href="https://kaggle.com/leonhardsuharjo" target="_blank">Profile</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <!-- Fullscreen PDF Modal -->
-  <div id="pdf-modal" class="modal hidden">
-    <div class="modal__overlay" data-close></div>
-    <div class="modal__content fullscreen-modal" role="dialog" aria-modal="true">
-      <header class="modal__header flex justify-between items-center">
-        <h3>Resume - Leonhard Satria Suharjo</h3>
-        <button class="btn btn--secondary btn--sm" data-close>&times;</button>
-      </header>
-      <div class="modal__body">
-        <iframe id="fullscreen-pdf" src="data:application/pdf;base64," width="100%" height="80vh" style="border: none;">
-          <p>Your browser does not support PDFs. <a href="#" download>Download the PDF</a>.</p>
-        </iframe>
-      </div>
-    </div>
-  </div>
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Leonhard Satria Suharjo. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- FLOATING ACTION BUTTON (WhatsApp) -->
+    <a href="mailto:leonhard.suharjo@gmail.com" class="fab" target="_blank" title="Email me">
+        <svg viewBox="0 0 24 24" fill="white">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.272-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.67-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421-7.403h-.004a9.87 9.87 0 00-4.981 1.429A9.864 9.864 0 002.605 9.74a9.864 9.864 0 004.412 8.292 9.867 9.867 0 005.016 1.429h.004a9.877 9.877 0 009.868-9.868 9.874 9.874 0 00-2.888-7.009 9.873 9.873 0 00-6.992-2.889m0-2.022A11.887 11.887 0 0112 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0"/>
+        </svg>
+    </a>
+
+    <script src="app.js"></script>
 </body>
 </html>
