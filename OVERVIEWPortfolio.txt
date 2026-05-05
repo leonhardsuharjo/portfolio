@@ -1,0 +1,685 @@
+Portfolio overview to paste all projects, certifications, and publications =
+last updated 25/04/26
+
+############################################### 
+
+PROJECTS = 
+
+Monkey Heist - Global Game Jam Messina 2026
+Jan 2026 – Jan 2026
+
+Associated with Università degli Studi di Messina
+A top-down stealth puzzle game developed in GameMaker (GML). The project focuses on state-machine mechanics, vector-based AI vision, and dynamic lighting systems.
+Skills: Game Development
+Thumbnail for GitHub repo
+
+GitHub repo
+Other contributors
+
+
++2
+View all contributors
+
+Patient Health Record System
+Jan 2026 – Jan 2026
+More on my Github repo.
+Skills: MySQL, PHP, +1 skill
+Thumbnail for webmainview.png
+webmainview.png
+Thumbnail for dbview.png
+dbview.png
+
+Cloud Defense Intelligence (CANDI) - Google Deepmind 2025
+Dec 2025 – Dec 2025
+Prototype AI-powered military logistics and security command center built with Google Cloud & Gemini 3.
+Leveraging Google Cloud's Digital Transformation to solve real-world defense logistics challenges.
+Features include:
+1. Command Center Dashboard
+2. AI-Powered Predictive Intelligence (Gemini 3 Pro)
+3. Strategic Operations Map (Leaflet Integration)
+4. Image Intelligence & Editing (Gemini 2.5 Flash)
+5. Zero Trust Security Monitor
+6. Sentinel AI Chat Assistant
+7. Digital Transformation Hub
+Skills: Google Gemini, Google Cloud Platform (GCP)
+Thumbnail for Video walkthrough
+
+Video walkthrough
+
+App demo
+Thumbnail for Webapp screenshot
+Webapp screenshot
+
+Portfolio website
+Dec 2025 – Dec 2025
+Last Updated on December 2025
+Skills: HTML, Cascading Style Sheets (CSS), +1 skill
+Thumbnail for personal website
+
+personal website
+
+SuplaiCerdas - Google & Kaggle Capstone 2025 - Material Price Monitor AI Agent for Enterprise Projects
+Nov 2025 – Dec 2025
+Google-Kaggle AI Agent Capstone project
+A prototype AI agent that help enterprises in automating material price checking, comparison, and risk assessment
+
+SuplaiCerdas — Prototype AI-powered supply chain intelligence agent system built with Google–Kaggle AI Agents framework.
+Leveraging multi-agent architectures and tool-augmented LLMs to mitigate material cost risks and protect profit margins in manufacturing projects.
+
+Features include:
+Multi-Agent Sequential Workflow Architecture
+Automated Supplier Price Monitoring Agent
+Price Change Analysis & Risk Classification Engine
+AI-Driven Procurement Recommendation Agent
+Custom Function Tools for External Data Access
+Agent Evaluation & Test-Driven Validation Pipeline
+Scalable Foundation for Real-World Supply Chain Automation
+Skills: Python (Programming Language), AI Agents
+Thumbnail for Enterprise AI agent
+
+Enterprise AI agent
+Thumbnail for github repo
+github repo
+
+Life Cycle of a Process in an Operating System
+Oct 2025 – Oct 2025
+
+Associated with Università degli Studi di Messina
+A 23-pages report on the explanation and implementation of process life cycle in the Windows and Linux operating systems, demonstrated by running terminal scripts and game application.
+Skills: Operating Systems
+
+Company website
+Jul 2025 – Jul 2025
+Skills: HTML, Cascading Style Sheets (CSS), +1 skill
+Thumbnail for VTC - Home
+
+VTC - Home
+
+Le Petit Cafe - Google & Kaggle Capstone project 2025 - Generative AI LLM chat interface
+Apr 2025 – May 2025
+Le Petit Cafe — Prototype AI-powered cafe conversational ordering and information system built with Generative AI & LangGraph.
+Leveraging Large Language Models, Retrieval-Augmented Generation (RAG), and function calling to enhance customer experience and operational efficiency in cafe businesses.
+
+Features include:
+AI-Powered Conversational Cafe Assistant (LLM-based)
+Smart Intent Detection & Function Routing
+Menu Intelligence & Item Lookup System
+FAQ Knowledge Engine with RAG & Embeddings
+Conversational Order Processing & Checkout Flow
+Database-Backed Order & Customer Management (SQLite)
+Structured Output & Tool-Based LLM Orchestration
+LangGraph-Driven Conversational Workflow
+Skills: Databases, Google Gemini, +2 skills
+Thumbnail for Le Petit Cafe — a prototype Generative AI Large Language Model chat interface
+
+Le Petit Cafe — a prototype Generative AI Large Language Model chat interface
+Other contributors
+View all contributors
+
+LifeSynced Web Application
+Oct 2024 – Nov 2024
+All-in-one health companion, syncing wellness, community, and technology for a healthier future.
+Features include:
+1. Biodata
+2. Connect and sync
+3. Wiki-health 
+4. Lifestyle schedule manager
+Skills: TypeScript, HTML, +2 skills
+
+Live App Demo
+Thumbnail for LifeSynced
+
+LifeSynced
+
+Enterprise Sales Scheduler Application
+Jun 2023 – Jul 2023
+Scheduler Application with functioning database made for manufacturer enterprises, with following features: 
+1. Python tkinter and SQL database
+2. Able to record project details,  sale profits, materials supplier, customer address, and more
+3. Give insights and display data in tables
+Skills: Databases, Relational Databases, +2 skills
+
+Torque, Inertia, and Force Calculator — App with database feature
+Feb 2023 – Mar 2023
+Calculator Application made with Python, has database feature.  Features include:
+1. Calculate elements torque, inertia, and force with the given variables, which will be recorded by the database
+2. connected SQL database
+Skills: Databases, Python (Programming Language)
+
+Building a Company Website
+Apr 2022 – Jul 2022
+A company website made with HTML, CSS, and Javascript, with multiple animations and frontend features, such as responsive device layout, static and floating buttons, - Kindly check my github account for more information regarding this project
+Skills: HTML, JavaScript, +1 skill
+
+Creating a web application's login and registration system
+Apr 2022 – May 2022
+
+Associated with Sekolah Victory Plus
+
+Show project
+Web application login and registration system that is linked to a database build with flask python and sqlite3.
+Skills: Python (Programming Language), MySQL
+
+Creating a website from scratch using html, css, and javascript
+Oct 2021 – Mar 2022
+
+Show project
+Informative website made with HTML, CSS, and javascript. Contain following features :
+- linked tabs
+- clickable icons
+- buttons leading to specific pages
+- smooth UI
+- information about Indonesia’s tourism
+Skills: HTML, JavaScript, +1 skill
+
+############################################### 
+
+CERTIFICATES = 
+Licenses & certifications
+
+HackerRank logo
+SQL Programming Learning Badge
+HackerRank
+Issued Mar 2026
+
+Show credential
+Skills: MySQL
+
+Palantir Technologies logo
+Deep Dive: Creating Your First Ontology
+Palantir Technologies
+Issued Feb 2026
+Credential ID ndrvu8y5uc2g
+
+Show credential
+Skills: Palantir (Data Engineering), Data Engineering
+Thumbnail for Ontology Foundry
+Ontology Foundry
+
+IBM logo
+IBM Dev Day 2026
+IBM
+Issued Feb 2026
+Thumbnail for certificate
+certificate
+
+Forem logo
+Top Google AI Post 
+Forem
+Issued Jan 2026
+
+Show credential
+Skills: Technical Writing
+Thumbnail for Google AI badge
+Google AI badge
+
+Medium logo
+External Editor Recognition on Medium
+Medium
+Issued Jan 2026
+Skills: AI Agents, Technical Writing, +2 skills
+Thumbnail for medium blog
+medium blog
+Thumbnail for 5 recognized articles
+
+5 recognized articles
+
+Databricks logo
+Databricks Fundamentals Accreditation
+Databricks
+Issued Jan 2026
+Skills: Databricks, Data Engineering, +1 skill
+Thumbnail for databricks1
+databricks1
+
+Cursa - Cursos Online logo
+PHP for web development by Codemy
+Cursa - Cursos Online
+Issued Jan 2026
+Credential ID u7524501
+Skills: PHP
+Thumbnail for php
+php
+
+Kaggle logo
+Intermediate Machine Learning
+Kaggle
+Issued Dec 2025
+
+Show credential
+Skills: Machine Learning, Python (Programming Language)
+Thumbnail for Leonhard Satria Suharjo - Intermediate Machine Learning.png
+Leonhard Satria Suharjo - Intermediate Machine Learning.png
+
+Google logo
+Scaling with Google Cloud Operations
+Google
+Issued Dec 2025
+Credential ID 20702508
+
+Show credential
+Skills: DevOps, Google Cloud Platform (GCP)
+
+Google logo
+Trust and Security with Google Cloud
+Google
+Issued Dec 2025
+Credential ID 20702069
+
+Show credential
+Skills: Google Cloud Platform (GCP), Cybersecurity
+
+International Baccalaureate logo
+MYP certificate
+International Baccalaureate
+Issued Jun 2022
+
+Kaggle logo
+Google - Kaggle AI Agents 5-days Intensive
+Kaggle
+Issued Dec 2025
+Credential ID 105
+
+Show credential
+Skills: AI Agents, Python (Programming Language)
+Thumbnail for 5-Day AI Agents Intensive Course with Google.png
+5-Day AI Agents Intensive Course with Google.png
+Thumbnail for SuplaiCerdas -- AI agents project
+
+SuplaiCerdas -- AI agents project
+
+Google logo
+Infrastructure and application modernization with Google Cloud
+Google
+Issued Sep 2025
+Credential ID 18578328
+
+Show credential
+Skills: Google Cloud Platform (GCP)
+
+Google logo
+Innovating with Google Cloud AI
+Google
+Issued Aug 2025
+Credential ID 17720079
+
+Show credential
+Skills: Google Cloud Platform (GCP), Cloud Computing
+
+Google logo
+Exploring Data Transformation with Google Cloud
+Google
+Issued May 2025
+Credential ID 16036449
+
+Show credential
+Skills: Google Cloud Platform (GCP), Cloud Computing, +1 skill
+
+Google logo
+Digital Transformation with Google Cloud
+Google
+Issued May 2025
+Credential ID 15873556
+
+Show credential
+Skills: Google Cloud Platform (GCP), Cloud Computing
+
+Palantir Technologies logo
+Deep Dive: Data Analysis in Quiver
+Palantir Technologies
+Issued Apr 2025
+Credential ID cecqrtityojm
+
+Show credential
+Skills: Palantir (Data Engineering)
+Thumbnail for Quiver Foundry
+Quiver Foundry
+
+Palantir Technologies logo
+Deep Dive: Data Analysis in Contour
+Palantir Technologies
+Issued Apr 2025
+Credential ID ybygtse7p5r3
+
+Show credential
+Skills: Palantir (Data Engineering), Data Analysis
+Thumbnail for Contour Foundry
+Contour Foundry
+
+Kaggle logo
+Google - Kaggle Generative AI 5 days Intensive
+Kaggle
+Issued Apr 2025
+Credential ID https://www.kaggle.com/certification/badges/leonhardsuharjo/96
+
+Show credential
+Skills: Python (Programming Language), Machine Learning, +1 skill
+Thumbnail for Completed 5-Day Gen AI Intensive.png
+Completed 5-Day Gen AI Intensive.png
+
+Kaggle logo
+2 years on Kaggle
+Kaggle
+Issued Apr 2025
+
+Show credential
+Skills: Data Analysis
+
+Palantir Technologies logo
+Speedrun: Creating Your First Data Connection
+Palantir Technologies
+Issued Apr 2025
+Credential ID z6oco3rvxyrw
+
+Show credential
+Skills: Data Analysis
+Thumbnail for Data Connection Foundry 
+Data Connection Foundry 
+
+Palantir Technologies logo
+Deep Dive: Building Your First Pipeline
+Palantir Technologies
+Issued Apr 2025
+Credential ID geikuyhsk7se
+
+Show credential
+Skills: Palantir (Data Engineering), Data Analysis
+Thumbnail for Pipeline Foundry
+Pipeline Foundry
+
+Palantir Technologies logo
+Foundry & AIP Builder Foundations
+Palantir Technologies
+Issued Apr 2025
+Credential ID 62wbt6q3tnbu
+
+Show credential
+Skills: Palantir (Data Engineering), Data Analysis
+Thumbnail for Foundry & AIP Foundations
+Foundry & AIP Foundations
+
+HackerRank logo
+C programming - 4 star silver Learning Badge 
+HackerRank
+Issued Mar 2025
+
+Show credential
+Skills: C (Programming Language), c programming
+Thumbnail for 4 star badge
+4 star badge
+
+HackerRank logo
+Python programming - 5 Star Gold Learning Badge 
+HackerRank
+Issued Nov 2024
+
+Show credential
+Skills: Python (Programming Language)
+Thumbnail for 5 star badge
+5 star badge
+
+Sekolah Victory Plus logo
+IB Academic Award for Indonesian A
+Sekolah Victory Plus
+Issued Dec 2023
+
+Sekolah Victory Plus logo
+IB Academic Award for Computer Science
+Sekolah Victory Plus
+Issued Dec 2023
+Skills: Python (Programming Language), Databases
+
+Dicoding Indonesia logo
+Belajar DevOps
+Dicoding Indonesia
+Issued Nov 2024 · Expires Nov 2027
+Credential ID 81P24LM38ZOY
+
+Show credential
+
+International Baccalaureate logo
+Bilingual Diploma
+International Baccalaureate
+Issued Jul 2024
+
+Devpost logo
+Hackathon Attendees - Code for Impact
+Devpost
+Issued Sep 2024
+Credential ID 3de7970f-c575-45e6-8bb0-0fb1781840b0
+
+Show credential
+Skills: JavaScript, Cascading Style Sheets (CSS), +2 skills
+
+Dicoding Indonesia logo
+Manajemen Proyek (Project Management)
+Dicoding Indonesia
+Issued Sep 2024 · Expires Sep 2027
+Credential ID 1RXYL9RR9PVM
+
+Show credential
+Skills: Project Management
+
+Sekolah Victory Plus logo
+IB Academic Award for Mathematics Analysis and Aproaches HL
+Sekolah Victory Plus
+Issued Dec 2022
+
+SAP logo
+Exploring SAP Analytics Cloud - Record of Achievement
+SAP
+Issued Oct 2023
+
+Show credential
+Skills: SAP Implementation, Data Analysis
+
+IDP Education Ltd logo
+IELTS English Language Exam - Academic IELTS - Band 7.5 
+IDP Education Ltd
+Issued Aug 2023
+
+Show credential
+Skills: English
+Thumbnail for IELTS_TRF_Scanned.jpeg
+IELTS_TRF_Scanned.jpeg
+
+Sekolah Victory Plus logo
+Best Innovation - SVP Innovation Month 2023
+Sekolah Victory Plus
+Issued Feb 2023
+
+Show credential
+
+Dicoding Indonesia logo
+Pemrograman JavaScript
+Dicoding Indonesia
+Issued Jan 2023 · Expires Jan 2026
+Credential ID 81P28LNGJPOY
+
+Show credential
+
+Center for Young Scientists, Indonesia logo
+Lomba Peneliti Belia Nasional 2022 - Computer Science
+Center for Young Scientists, Indonesia
+Issued Dec 2022
+Credential ID 2064/CYS/12/S/2022
+
+Show credential
+Skills: Python (Programming Language)
+
+Center for Young Scientists, Indonesia logo
+Harapan 2 Young Scientists Competition 2022 - Bidang Penelitian Komputer 
+Center for Young Scientists, Indonesia
+Issued Nov 2022
+Credential ID 60QD13F1F4
+
+Show credential
+Skills: Python (Programming Language), Machine Learning
+
+Dicoding Indonesia logo
+Cloud Practitioner Essentials 
+Dicoding Indonesia
+Issued Oct 2022 · Expires Oct 2025
+Credential ID JMZVNGWEJPN9
+
+Show credential
+Skills: SAP Implementation, Data Analysis
+
+ASEAN Foundation logo
+95/100 - Asean Data Science Explorer enablement session 2022 
+ASEAN Foundation
+Issued Jul 2022
+
+Show credential
+
+RevoU logo
+Intro to Data Analytics 
+RevoU
+Issued Oct 2022 · Expires Oct 2024
+
+Show credential
+Skills: Data Analysis
+
+Dicoding Indonesia logo
+Machine Learning
+Dicoding Indonesia
+Issued Aug 2022 · Expires Aug 2025
+Credential ID JMZVG5R6JZN9
+
+Show credential
+Skills: Python (Programming Language), Machine Learning, +1 skill
+
+Dicoding Indonesia logo
+Pemrograman Dengan Python
+Dicoding Indonesia
+Issued Jun 2022 · Expires Jun 2025
+Credential ID JMZVGD68RZN9
+
+Show credential
+Skills: Python (Programming Language)
+
+Dicoding Indonesia logo
+Visualisasi Data
+Dicoding Indonesia
+Issued Jun 2022 · Expires Jun 2025
+Credential ID 53XE0Y9O9XRN
+
+Show credential
+Skills: Data Analysis
+
+Indonesian Air Force - TNI Angkatan Udara logo
+Juara 1 Kuis Penjaga Langit - Tingkat Nasional [2]
+Indonesian Air Force - TNI Angkatan Udara
+Issued Dec 2020
+
+Show credential
+
+Kaggle logo
+Beginner Machine Learning 
+Kaggle
+Issued Jun 2022
+
+Show credential
+Skills: Python (Programming Language), Machine Learning
+
+EnglishScore logo
+English CEFR C1 level
+EnglishScore
+Issued Apr 2022 · Expires Apr 2024
+Credential ID c4596f6f
+
+Indonesian Air Force - TNI Angkatan Udara logo
+Juara 1 Kuis Penjaga Langit - Tingkat Nasional [1]
+Indonesian Air Force - TNI Angkatan Udara
+Issued May 2020
+
+Show credential
+
+DinoLab logo
+Piagam Penghargaan (Certificate of Achievement) on BRICSMATH international math competition 
+DinoLab
+Issued Jun 2020
+
+### 
+PUBLICATIONS
+
+Rebuilding My Project Manager App prototype — ProjekKu ID
+Apr 13, 2026Apr 13, 2026
+Show publication
+What implementing a Database-First design taught me
+
+Making my first Ontology with Palantir Foundry
+
+Stackademic · Mar 1, 2026
+
+Show publication
+The role of Object and Ontology in Data Engineering
+
+TCP & UDP, Core Transport Layer Protocols in Computer Networks
+
+Coffee and Code · Jan 14, 2026
+
+Show publication
+A discussion of each.
+
+Why Your Laptop Lags at Times — Context Switching
+
+Stackademic · Dec 31, 2025
+
+Show publication
+An Operating Systems Concept.
+
+450+ day streak on Duolingo
+
+Dec 17, 2025
+
+Show publication
+But does it matter?
+
+CANDI - Cloud Defense Intelligence Platform
+
+Dec 8, 2025
+
+Show publication
+How I Connected AI Agents with Manufacturing Supply Chain
+
+Coffee and Code · Dec 3, 2025
+
+Show publication
+Building SuplaiCerdas: From Google-Kaggle’s AI Agents Course to Real-World Supply Chain Automation
+
+Post-order and Pre-order traversal algorithm in Python trees
+
+Coffee and Code · Nov 9, 2025
+
+Show publication
+A review of the algorithm I learned in my algorithms and data structures class in my Data Analysis university major.
+
+Infrastructure and Applications modernization with Google Cloud — what I learned
+
+Sep 26, 2025
+
+Show publication
+My short reflection after finishing the fourth module of the Google Cloud Platform Digital Leader course
+
+Google Cloud’s Digital Leader Course – first three modules reflection
+
+Aug 31, 2025
+
+Show publication
+A short reflection of my course progress in the past few weeks
+
+Learning Python & C with Hackerrank — short reflection
+
+Stackademic · Aug 24, 2025
+
+Show publication
+What Hackerrank taught me.
+
+Le Petit Cafe — a prototype Generative AI Large Language Model chat interface
+
+Apr 19, 2025
+
+Show publication
+A deep dive towards our team’s Capstone Project as a part of the 5-day Generative AI course held by Kaggle and Google.
+
